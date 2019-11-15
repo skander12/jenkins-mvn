@@ -11,7 +11,12 @@
   <name>my-app</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
-
+  <distributionManagement>
+  <repository>
+    <id>nexus</id>
+    <url>http://34.247.135.14:8081/nexus/content/repositories/nexus</url>
+  </repository>
+</distributionManagement>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
