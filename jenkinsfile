@@ -1,0 +1,9 @@
+node{
+  stage("checkout"){
+  git 'https://github.com/skander12/jenkins-mvn.git'
+  }
+  
+  stage("build"){
+  sh 'mvn package'
+  }
+}
